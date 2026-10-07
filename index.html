@@ -905,6 +905,15 @@
       font-size: 16px;
     }
 
+    .reasons p + p {
+      margin-top: 6px;
+    }
+
+    .reasons .lead {
+      color: #fff;
+      font-weight: 600;
+    }
+
     /* ---------- Call to action ---------- */
 
     .cta {
@@ -1232,8 +1241,8 @@
                         <dd>447</dd>
                       </div>
                       <div>
-                        <dt>Arguments I&rsquo;ve lost in the shower</dt>
-                        <dd>0</dd>
+                        <dt>Traffic citations</dt>
+                        <dd>3</dd>
                       </div>
                       <div class="you">
                         <dt>Career dates with you <small>(hoping to fix this)</small></dt>
@@ -1246,10 +1255,15 @@
                   <section aria-labelledby="facts-title">
                     <h3 id="facts-title">Useless info</h3>
                     <ul class="facts">
-                      <li>Bananas are berries. Strawberries are not. I will tell you this on our first date.</li>
-                      <li>Sharks are older than trees. I think about this weekly.</li>
-                      <li>Octopuses have three hearts. I have one, and it&rsquo;s currently accepting applications.</li>
-                      <li>I can&rsquo;t whistle. I&rsquo;ve tried. I&rsquo;m still trying.</li>
+                      <li>I can ride a unicycle. No, I don&rsquo;t know why either.</li>
+                      <li>I play guitar. &ldquo;Play&rdquo; is doing a lot of heavy lifting in that sentence.</li>
+                      <li>
+                        I&rsquo;ve never lost an argument in the shower. My opponents remain unaware of their defeat.
+                      </li>
+                      <li>
+                        I&rsquo;ve won every street race I&rsquo;ve ever entered. To be fair, the other drivers
+                        didn&rsquo;t know we were racing.
+                      </li>
                     </ul>
                   </section>
 
@@ -1274,14 +1288,13 @@
           <li>
             <span class="num" aria-hidden="true">01</span>
             <h3>Zero risk</h3>
-            <p>
-              One date. No contract, no commitment, no hard feelings. Think of it as a free trial with an
-              extremely generous return policy.
-            </p>
+            <p class="lead">One date. No contract. No commitment. No hard feelings.</p>
+            <p>Think of it as a free trial with an extremely generous return policy.</p>
           </li>
           <li>
             <span class="num" aria-hidden="true">02</span>
             <h3>Guaranteed laughs</h3>
+            <p class="lead">I&rsquo;m not promising a six-pack. I&rsquo;m promising at least one laugh.</p>
             <p>
               If I don&rsquo;t make you laugh at least once, dessert is on me. (Making you laugh is a 98 on my
               stat sheet for a reason.)
@@ -1289,18 +1302,23 @@
           </li>
           <li>
             <span class="num" aria-hidden="true">03</span>
-            <h3>You pick the game</h3>
+            <h3>No awkward interview</h3>
+            <p class="lead">This isn&rsquo;t a job interview.</p>
             <p>
-              Tacos, coffee, mini golf, the aquarium (sharks!). I&rsquo;ll be on time, phone in my pocket, and
-              genuinely curious about you.
+              No rapid-fire questions about your five-year plan. We&rsquo;ll grab something good, talk about
+              whatever comes up, and see if we actually enjoy being around each other.
             </p>
           </li>
           <li>
             <span class="num" aria-hidden="true">04</span>
-            <h3>Full spider coverage</h3>
+            <h3>Chivalry isn&rsquo;t dead</h3>
+            <p class="lead">
+              Doors get opened. You walk on the inside of the sidewalk. I protect you at all costs when
+              you&rsquo;re with me.
+            </p>
             <p>
-              Bags, jackets, leftovers, and yes, spiders. I carry it all, and the spiders always get
-              relocated alive.
+              I&rsquo;m not trying to impress you with outdated rules&mdash;I just think treating a woman well
+              never goes out of style.
             </p>
           </li>
         </ol>
@@ -1308,7 +1326,7 @@
 
       <section class="cta" aria-labelledby="cta-title">
         <h2 id="cta-title">Ready to sign the free agent?</h2>
-        <p class="cta__lead">One date. Your pick of venue. Contract terms are extremely negotiable.</p>
+        <p class="cta__lead">One date. Offer valid through the end of the week. Contract terms are extremely negotiable.</p>
         <!-- The link and the number below are filled in by the script at the bottom of the page (search "phone") -->
         <a class="btn" id="accept" href="#">Accept the offer <span aria-hidden="true">&rarr;</span></a>
         <p class="cta__alt" id="reach" hidden>Or just text me: <strong id="phone"></strong></p>
