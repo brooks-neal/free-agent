@@ -16,7 +16,7 @@
   <title>Brooks Neal · Free Agent · 2026 Trading Card</title>
   <meta
     name="description"
-    content="Limited edition, 1 of 1. Scouting report inside. Spoiler: the dad jokes are a 99."
+    content="Limited edition, 1 of 1. Scouting report inside. Spoiler: zero felonies."
   />
   <meta name="robots" content="noindex, nofollow" />
   <meta name="theme-color" content="#0a1328" />
@@ -24,7 +24,7 @@
   <meta property="og:title" content="Brooks Neal · Free Agent · 2026 Trading Card" />
   <meta
     property="og:description"
-    content="Limited edition, 1 of 1. Scouting report inside. Spoiler: the dad jokes are a 99."
+    content="Limited edition, 1 of 1. Scouting report inside. Spoiler: zero felonies."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -679,7 +679,7 @@
 
     .skill {
       display: grid;
-      grid-template-columns: minmax(0, 9.6em) 1fr 2em;
+      grid-template-columns: minmax(0, 13.6em) minmax(0, 1fr) 2em;
       align-items: center;
       gap: 10px;
       font: 600 14px/1.1 var(--font-label);
@@ -725,6 +725,27 @@
 
     .js .card--back.is-visible .skill__bar i {
       width: calc(var(--v) * 100%);
+    }
+
+    @media (max-width: 480px) {
+      .skills {
+        gap: 10px;
+      }
+
+      .skill {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 4px 10px;
+      }
+
+      .skill b {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      .skill__bar {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
     }
 
     .totals > div {
@@ -1033,7 +1054,8 @@
         <span>1 of 1 limited edition</span>
         <span>First pick is yours</span>
         <span>Now accepting offers</span>
-        <span>Dad jokes: 99 OVR</span>
+        <span>Parent approval rate: 97</span>
+        <span>Felonies: 0</span>
         <span>No long-term contract required</span>
       </div>
       <div class="ticker__group">
@@ -1041,7 +1063,8 @@
         <span>1 of 1 limited edition</span>
         <span>First pick is yours</span>
         <span>Now accepting offers</span>
-        <span>Dad jokes: 99 OVR</span>
+        <span>Parent approval rate: 97</span>
+        <span>Felonies: 0</span>
         <span>No long-term contract required</span>
       </div>
     </div>
@@ -1163,35 +1186,35 @@
                   <section aria-labelledby="skills-title">
                     <h3 id="skills-title">Skills <small>rated 0&ndash;99</small></h3>
                     <ul class="skills">
-                      <li class="skill" style="--v: 0.99; --i: 0">
-                        <span>Dad jokes</span>
+                      <li class="skill" style="--v: 0.98; --i: 0">
+                        <span>Making you laugh</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
-                        <b>99</b>
+                        <b>98</b>
                       </li>
-                      <li class="skill" style="--v: 0.99; --i: 1">
-                        <span>Karaoke confidence</span>
+                      <li class="skill" style="--v: 0.97; --i: 1">
+                        <span>Parent approval rate</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
-                        <b>99</b>
+                        <b>97</b>
                       </li>
-                      <li class="skill" style="--v: 0.96; --i: 2">
-                        <span>Grocery hauling</span>
+                      <li class="skill" style="--v: 0.95; --i: 2">
+                        <span>Actually following through</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
-                        <b>96</b>
+                        <b>95</b>
                       </li>
-                      <li class="skill" style="--v: 0.82; --i: 3">
-                        <span>Cooking (edible)</span>
+                      <li class="skill skill--lo" style="--v: 0.32; --i: 3">
+                        <span>Cooking something edible</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
-                        <b>82</b>
+                        <b>32</b>
                       </li>
-                      <li class="skill skill--lo" style="--v: 0.31; --i: 4">
-                        <span>Sense of direction</span>
+                      <li class="skill" style="--v: 0.87; --i: 4">
+                        <span>Admitting when I&rsquo;m wrong</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
-                        <b>31</b>
+                        <b>87</b>
                       </li>
-                      <li class="skill skill--lo" style="--v: 0.23; --i: 5">
-                        <span>Karaoke accuracy</span>
+                      <li class="skill" style="--v: 0.02; --i: 5">
+                        <span>Actually being wrong</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
-                        <b>23</b>
+                        <b>2</b>
                       </li>
                     </ul>
                   </section>
@@ -1201,16 +1224,16 @@
                     <h3 id="totals-title">Career totals</h3>
                     <dl class="totals">
                       <div>
-                        <dt>Dad jokes delivered</dt>
-                        <dd>4,812</dd>
+                        <dt>Felonies</dt>
+                        <dd>0</dd>
                       </div>
                       <div>
-                        <dt>Spiders relocated (alive)</dt>
-                        <dd>37</dd>
+                        <dt>Times I&rsquo;ve said &ldquo;you too&rdquo; at inappropriate times</dt>
+                        <dd>447</dd>
                       </div>
                       <div>
-                        <dt>Fries stolen after &ldquo;I&rsquo;m not hungry&rdquo;</dt>
-                        <dd>211</dd>
+                        <dt>Arguments I&rsquo;ve lost in the shower</dt>
+                        <dd>0</dd>
                       </div>
                       <div class="you">
                         <dt>Career dates with you <small>(hoping to fix this)</small></dt>
@@ -1260,8 +1283,8 @@
             <span class="num" aria-hidden="true">02</span>
             <h3>Guaranteed laughs</h3>
             <p>
-              If I don&rsquo;t make you laugh at least once, dessert is on me. (The dad jokes are a 99 for a
-              reason.)
+              If I don&rsquo;t make you laugh at least once, dessert is on me. (Making you laugh is a 98 on my
+              stat sheet for a reason.)
             </p>
           </li>
           <li>
