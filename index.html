@@ -998,15 +998,6 @@
       outline-offset: 5px;
     }
 
-    .cta__alt {
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    .cta__alt strong {
-      color: var(--gold-2);
-      user-select: all;
-    }
-
     .cta__turn {
       margin-top: 14px;
       color: rgba(255, 255, 255, 0.75);
@@ -1327,9 +1318,8 @@
       <section class="cta" aria-labelledby="cta-title">
         <h2 id="cta-title">Ready to sign the free agent?</h2>
         <p class="cta__lead">One date. Offer valid through the end of the week. Contract terms are extremely negotiable.</p>
-        <!-- The link and the number below are filled in by the script at the bottom of the page (search "phone") -->
+        <!-- The text link is filled in by the script at the bottom of the page (search "phone") -->
         <a class="btn" id="accept" href="#">Accept the offer <span aria-hidden="true">&rarr;</span></a>
-        <p class="cta__alt" id="reach" hidden>Or just text me: <strong id="phone"></strong></p>
         <p class="cta__turn">I showed you my stats. I&rsquo;d love to see yours.</p>
       </section>
     </main>
@@ -1457,8 +1447,6 @@
 
       if (accept) {
         accept.href = "sms:+1" + phone.join("") + "?&body=" + encodeURIComponent(invite).replace(/'/g, "%27");
-        document.getElementById("phone").textContent = "(" + phone[0] + ") " + phone[1] + "-" + phone[2];
-        document.getElementById("reach").hidden = false;
       }
 
       if (accept && !reduce) {
