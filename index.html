@@ -679,7 +679,7 @@
 
     .skill {
       display: grid;
-      grid-template-columns: minmax(0, 13.6em) minmax(0, 1fr) 2em;
+      grid-template-columns: minmax(0, 13.6em) minmax(0, 1fr) 2.4em;
       align-items: center;
       gap: 10px;
       font: 600 14px/1.1 var(--font-label);
@@ -1086,7 +1086,7 @@
               <div class="card__face">
                 <div class="strip">
                   <span>Singles League &middot; 2026</span>
-                  <span>No. 001</span>
+                  <span>No. 0001</span>
                 </div>
 
                 <div class="photo">
@@ -1172,7 +1172,7 @@
                   <div>
                     <p class="back-head__eyebrow">Scouting report</p>
                     <h2 id="report-title">Brooks Neal</h2>
-                    <p class="back-head__meta">Free agent &middot; Card #001</p>
+                    <p class="back-head__meta">Free agent &middot; Card #0001</p>
                   </div>
                   <div class="ovr" role="img" aria-label="Overall rating: 84">
                     <span aria-hidden="true">OVR</span>
@@ -1184,37 +1184,37 @@
                   <!-- EDIT: skills. --v is the bar fill (0 to 1), --i is the animation order. -->
                   <!-- Add class "skill--lo" for the red "weakness" style. -->
                   <section aria-labelledby="skills-title">
-                    <h3 id="skills-title">Skills <small>rated 0&ndash;99</small></h3>
+                    <h3 id="skills-title">Skills <small>rated 0&ndash;100</small></h3>
                     <ul class="skills">
-                      <li class="skill" style="--v: 0.98; --i: 0">
+                      <li class="skill" style="--v: 1; --i: 0">
+                        <span>Going with the bit</span>
+                        <span class="skill__bar" aria-hidden="true"><i></i></span>
+                        <b>100</b>
+                      </li>
+                      <li class="skill" style="--v: 0.98; --i: 1">
                         <span>Making you laugh</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
                         <b>98</b>
                       </li>
-                      <li class="skill" style="--v: 0.97; --i: 1">
+                      <li class="skill" style="--v: 0.97; --i: 2">
                         <span>Parent approval rate</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
                         <b>97</b>
                       </li>
-                      <li class="skill" style="--v: 0.95; --i: 2">
+                      <li class="skill" style="--v: 0.95; --i: 3">
                         <span>Actually following through</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
                         <b>95</b>
-                      </li>
-                      <li class="skill skill--lo" style="--v: 0.32; --i: 3">
-                        <span>Cooking something edible</span>
-                        <span class="skill__bar" aria-hidden="true"><i></i></span>
-                        <b>32</b>
                       </li>
                       <li class="skill" style="--v: 0.87; --i: 4">
                         <span>Admitting when I&rsquo;m wrong</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
                         <b>87</b>
                       </li>
-                      <li class="skill" style="--v: 0.02; --i: 5">
-                        <span>Actually being wrong</span>
+                      <li class="skill skill--lo" style="--v: 0.32; --i: 5">
+                        <span>Cooking something edible</span>
                         <span class="skill__bar" aria-hidden="true"><i></i></span>
-                        <b>2</b>
+                        <b>32</b>
                       </li>
                     </ul>
                   </section>
