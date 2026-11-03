@@ -4,11 +4,12 @@
   FREE AGENT CARD: a one-page dating ad styled like a sports trading card.
 
   TO PERSONALIZE (search this file for "EDIT"):
-    1. Name ...... "Brooks" / "Neal" (title, card front, card back, photo alt text)
+    1. Name ...... "Brooks" / "Neal" (title, card front, card back, photo alt text, full name in the fifth pitch box)
     2. Vitals .... age, height, weight
     3. Photo ..... save a portrait photo next to this file as photo.jpg
     4. Contact ... the phone number, in the script at the bottom (search "phone")
     5. Stats ..... skills, career totals and useless info are plain HTML lists
+    6. Socials ... Instagram and LinkedIn links on the card back and in the fifth pitch box (search "social")
 -->
 <head>
   <meta charset="utf-8" />
@@ -902,6 +903,10 @@
       .reasons {
         grid-template-columns: 1fr 1fr;
       }
+
+      .reasons .wide {
+        grid-column: 1 / -1;
+      }
     }
 
     .reasons li {
@@ -939,6 +944,39 @@
     .reasons .lead {
       color: #fff;
       font-weight: 600;
+    }
+
+    .reasons .socials {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 10px;
+      margin-top: 12px;
+    }
+
+    .reasons .socials strong {
+      margin-right: 4px;
+      color: var(--gold-2);
+      font: 700 17px/1 var(--font-label);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .reasons .socials a {
+      padding: 7px 14px 6px;
+      border: 1px solid rgba(255, 226, 154, 0.5);
+      border-radius: 999px;
+      color: #fff;
+      font: 600 14px/1 var(--font-label);
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .reasons .socials a:hover,
+    .reasons .socials a:focus-visible {
+      border-color: var(--gold);
+      background: rgba(243, 182, 63, 0.16);
     }
 
     /* ---------- Call to action ---------- */
@@ -1285,6 +1323,7 @@
                     </ul>
                   </section>
 
+                  <!-- EDIT: your Instagram and LinkedIn links -->
                   <div class="serial">
                     <a class="social-link" href="https://www.instagram.com/brooksneal" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @brooksneal">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1294,7 +1333,7 @@
                       </svg>
                       @brooksneal
                     </a>
-                    <a class="social-link" href="https://www.linkedin.com/in/brooks-neal-3b94ab9a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: Brooks Neal">
+                    <a class="social-link" href="https://www.linkedin.com/in/brooks-taylor-neal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: Brooks Neal">
                       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
                         <rect x="2" y="9" width="4" height="12"/>
@@ -1353,13 +1392,16 @@
               never goes out of style.
             </p>
           </li>
-          <li>
+          <li class="wide">
+            <!-- EDIT: your Instagram and LinkedIn links -->
             <span class="num" aria-hidden="true">05</span>
-            <h3>Honest feedback</h3>
-            <p class="lead">If it isn&rsquo;t working, I&rsquo;ll tell you.</p>
-            <p>
-              Admitting when I&rsquo;m wrong is an 87 on my stat sheet, and I&rsquo;m working on the other 13.
-              You&rsquo;d get a straight answer either way.
+            <h3>Transparency</h3>
+            <p class="lead">I&rsquo;m gainfully employed. LinkedIn has the receipts.</p>
+            <p>Full name and both profiles are right here. Run the check. I&rsquo;m bad at keeping secrets and good at keeping jobs.</p>
+            <p class="socials">
+              <strong>Brooks Taylor Neal</strong>
+              <a href="https://www.linkedin.com/in/brooks-taylor-neal" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.instagram.com/brooksneal/" target="_blank" rel="noopener noreferrer">Instagram @brooksneal</a>
             </p>
           </li>
         </ol>
